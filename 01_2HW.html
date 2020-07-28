@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .text-box {
+            width: 600px;
+            height: 245px;
+            float: left;
+            padding-left: 12px;
+        }
+
+        .img-box {
+            width: 32%;
+            height: 245px;
+            float: left;
+            background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp13touch-space-select-202005_GEO_KR?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1587460346205");
+            background-position: center;
+            background-size: 120%;
+        }
+
+        .info-txt {
+            letter-spacing: -1px;
+            padding-top: 50px;
+        }
+        .main-txt{
+            padding-top: 20px;
+        }
+
+        .total-box {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        .input-group {
+            width: 50%;
+            margin: 0px auto;
+        }
+
+        .bottom-group {
+            margin-top: 250px;
+        }
+
+        .form-group {
+            width: 50%;
+            margin: 0px auto;
+        }
+        .btn{
+            width: 20%;
+            margin-left: 743px;
+            margin-top: 65px;
+            margin-bottom: 100px;
+        }
+        .option-group{
+            margin-top: 70px;
+        }
+    </style>
+    <script>
+        function order() {
+            alert("주문이 완료되었습니다!!");
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="total-box">
+    <div class="img-box">
+    </div>
+    <div class="text-box">
+        <h2 class="main-txt">
+            2020년 MacBook Pro (13형)
+        </h2>
+        <p class="info-txt">
+            1.4GHz 쿼드 코어 8세대 Intel Core i5 프로세서(최대 3.9GHz Turbo Boost)
+            <br>
+            8GB 메모리 / 256GB SSD 저장 장치
+            <br>
+            13형 Retina True Tone 디스플레이
+            <br>
+            Intel 내장 그래픽
+        </p>
+
+    </div>
+</div>
+<div class="bottom-group">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="name">이름</span>
+        </div>
+        <input type="text" class="form-control" placeholder="이름" aria-label="name"
+               aria-describedby="name">
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="adr">주소</span>
+        </div>
+        <input type="text" class="form-control" placeholder="주소" aria-label="adr"
+               aria-describedby="adr">
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="phone-num">전화번호</span>
+        </div>
+        <input type="text" class="form-control" placeholder="전화번호" aria-label="phone-num"
+               aria-describedby="phone-num">
+    </div>
+    <form class="option-group">
+        <div class="form-group">
+            <h5>옵션 선택</h5>
+            <label for="count-num">수량</label>
+            <select class="form-control" id="count-num">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="option-cpu">프로세서</label>
+            <select class="form-control" id="option-cpu">
+                <option>1.4GHz 쿼드 코어 8세대 Intel Core i5 프로세서(최대 3.9GHz Turbo Boost)</option>
+                <option>1.7GHz 쿼드 코어 8세대 Intel Core i7 프로세서(최대 4.5GHz Turbo Boost) +405,000원</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="option-mem">메모리</label>
+            <select class="form-control" id="option-mem">
+                <option>8GB 2133MHz LPDDR3 메모리</option>
+                <option>16GB 2133MHz LPDDR3 메모리 +270,000원</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="option-storage">저장장치</label>
+            <select class="form-control" id="option-storage">
+                <option>256GB SSD 저장장치</option>
+                <option>512GB SSD 저장장치 +270,000원</option>
+                <option>1TB SSD 저장장치 +540,000원</option>
+                <option>2TB SSD 저장장치 +1,080,000원</option>
+            </select>
+        </div>
+
+    </form>
+    <div>
+        <button onclick="order()" type="button" class="btn btn-primary">구매</button>
+    </div>
+
+
+</div>
+
+</body>
+</html>
